@@ -21,6 +21,6 @@ pip install thumbor opencv-engine
 
 # Start Thumbor on port 8888
 echo "Starting thumbor on port 8888..."
-thumbor -c /vagrant/thumbor.conf -p 8889 &
+thumbor -c /vagrant/thumbor.conf -p 8888 &
 
 echo "Done!"
