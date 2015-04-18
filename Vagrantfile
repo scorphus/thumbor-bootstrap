@@ -1,0 +1,10 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.provision :shell, :path => "install.sh"
+  config.vm.box = "ubuntu14.04"
+  config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
+  config.vm.network "private_network", ip: "192.168.56.103"
+  config.vm.network "public_network", bridge: 'en1: Wi-Fi (AirPort)'
+end
