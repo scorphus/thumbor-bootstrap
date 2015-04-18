@@ -15,6 +15,7 @@ libtiff-dev
 pkg-config
 python-dev
 python-numpy
+python-opencv
 python-pip
 unzip
 vim
