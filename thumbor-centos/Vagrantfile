@@ -1,0 +1,8 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure("2") do |config|
+  config.vm.provision :shell, :path => "install.sh"
+  config.vm.box = "centos-6.4"
+  config.vm.network "public_network", bridge: 'en1: Wi-Fi (AirPort)'
+end
