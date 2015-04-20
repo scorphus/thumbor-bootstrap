@@ -1,7 +1,10 @@
 build-essential
 cmake
+git
+graphicsmagick++
 libavcodec-dev
 libavformat-dev
+libboost-dev
 libcurl4-openssl-dev
 libdc1394-22-dev
 libgtk2.0-dev
@@ -16,6 +19,8 @@ pkg-config
 python-dev
 python-numpy
 python-opencv
+python-pgmagick
+python-pil
 python-pip
 unzip
 vim
