@@ -1,8 +1,8 @@
 #!/bin/bash -eu
 
-# Copyright 2014 gandalf authors. All rights reserved.
-# Use of this source code is governed by a BSD-style
-# license that can be found in the LICENSE file.
+# Copyright 2015 Pablo Santiago Blum de Aguiar <scorphus@gmail.com>
+# Use of this source code is governed by the MIT license which can
+# be found in the LICENSE file.
 
 # Install dependencies
 echo "Updating Ubuntu... (patience, this will take long)"
