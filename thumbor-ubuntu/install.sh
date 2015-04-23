@@ -5,10 +5,8 @@
 # be found in the LICENSE file.
 
 # Install dependencies
-echo "Updating Ubuntu... (patience, this will take long)"
-apt-get update
-apt-get dist-upgrade -y
 echo "Installing dependencies... (patience, this will take long)"
+apt-get update
 apt-get install $(grep -vE "^\s*#" /vagrant/requirements.apt | tr "\n" " ") -y
 
 # Check OpenCV installation
@@ -18,6 +16,10 @@ python -c 'import cv, cv2, cv2.cv' || { echo 'OpenCV did not install correctly' 
 # If it's all good, proceed and install Thumbor and OpenCVEngine
 echo "Installing Thumbor with GraphicsMagickEngine and OpenCVEngine..."
 cd /vagrant
+virtualenv .e
+set +u
+source .e/bin/activate
+set -u
 git clone https://github.com/thumbor/thumbor.git
 pip install -e ./thumbor/
 git clone https://github.com/thumbor/graphicsmagick-engine.git

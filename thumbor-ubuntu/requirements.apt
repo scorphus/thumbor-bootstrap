@@ -22,6 +22,7 @@ python-opencv
 python-pgmagick
 python-pil
 python-pip
+python-virtualenv
 unzip
 vim
 virtualbox-guest-dkms
